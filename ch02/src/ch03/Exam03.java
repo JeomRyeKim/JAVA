@@ -33,7 +33,8 @@ public class Exam03 {
 		System.out.println(result);
 		
 		//과제 체지방율 구하기
-		double bmi = (result * 100) / weight;
+		final int ST3 = 100;
+		double bmi = (result * ST3) / weight;
 		System.out.println(bmi);
 		
 				
