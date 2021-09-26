@@ -11,7 +11,7 @@ public class InfinityAndNaNCheckExample {
 		double z = x/y;//몫
 		double z1 = x%y;//나머지
 		
-		System.out.println(Double.isFinite(z));//실수의 몫의 연산결과가 infinite인지 여부 확인
+		System.out.println(Double.isInfinite(z));//실수의 몫의 연산결과가 infinite인지 여부 확인
 		System.out.println(Double.isNaN(z1));//실수의 나머지 연산 결과가 숫자로 표현 불가한지 체크
 		
 		System.out.println(z+2);//모래사장에 모래 한 톨 더하면 모래사장

@@ -29,7 +29,7 @@ public class ForExam4 {
 	}
 	
 	System.out.println();//한 줄 아래로 띄우기
-	for(int i=10; i>0; i--) {//초기화 후 i>10 비교연산결과 false이므로 블럭{}실행 안함.
+	for(int i=10; i>10; i--) {//초기화 후 i>10 비교연산결과 false이므로 블럭{}실행 안함.
 		System.out.print(i + "\t");
 	}
 	
