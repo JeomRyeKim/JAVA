@@ -2,7 +2,7 @@ package ch04_array2;
 
 import java.util.Scanner;
 
-public class ArrayExam01 {
+public class ArrayExam2 {
  public static void main(String[] args) {
   //성적표 프로그램
   //스캐너로 값을 입력받기 int[] score = {76,45,34,89,100,50,90,92};
@@ -30,15 +30,15 @@ public class ArrayExam01 {
 		 		scores[i] = scanner.nextInt();
 		 	} break;
 		 case 2 : System.out.println("통계출력>");
-		 	for(int i=0; i<scores.length; i++) {
-		 		sum +=scores[i];
+		 	for(int i:scores) {
+		 		sum +=i;
 		 	} 
 		 	System.out.println("성적합계>" + sum);
 		 	System.out.println("성적평균>" + (sum/(double)scores.length));
 		 	break;
 		 case 3 : System.out.println("성적순 출력>");
 		 	int temp=0;//변수 바꾸기용 임시저장 변수.
-		 	for(int i=0; i<scores.length; i++) {
+		 	for(int i=0; i<scores.length; i++) {//이런경우 향상된 for문 사용하기 어려움.
 		 		for(int j=i+1; j<scores.length; j++) {
 		 			if(scores[i] < scores[j]) {//오름차순은 큰 값이 뒤로 가야하는데 큰 값이 앞에 있으면 뒤로 이동시킴.
 		 				temp = scores[i];//임시저장
@@ -47,11 +47,9 @@ public class ArrayExam01 {
 		 			}
 		 		}//안쪽 for문
 		 	}//바깥쪽 for문
-		 	//길이가 8인 배열의 index값 출력 0,1,2,3,4,5,6,7 <- 7 = 8-1 <- scores.length-1
-		 	//for(int i=0; i<scores.length; i++) { }
-		 	for(int i=(scores.length-1); i>=0; i--) { // int i = 7; -> 7,6,5,4,3,2,1,0순으로 끝남.
-		 		System.out.print(scores[i] + "  ");
-		 	} 
+		 		
+		 	for(int i:scores) 
+		 		System.out.print(i + ", ");	 	 
 		 	System.out.println();
 		 	break;
 		 case 4 : run = !run;

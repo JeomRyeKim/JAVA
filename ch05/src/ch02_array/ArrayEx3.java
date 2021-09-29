@@ -4,7 +4,7 @@ public class ArrayEx3 {
 	public static void main(String[] args) {
 		//정수타입 10개의 변수에 저장된 값의 평균 구하기		
 		//배열선언
-		//타입[] 변수명 = new 타입[저장할요소 개수];
+		//타입 변수명[] = new 타입[저장할요소 개수];
 		int scores[] = new int[10];
 		
 		//동일타입의 값이 순서대로 연속해서 저장됨.

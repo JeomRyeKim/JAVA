@@ -1,6 +1,6 @@
 package ch03_array;
 
-public class Ex02 extends ArrayEx10 {
+public class Ex02 {
 public static void main(String[] args) {
 	int[] n = new int[5];
 	n[0]=12; n[1]=20;
@@ -18,7 +18,7 @@ public static void main(String[] args) {
 	//배열객체를 처음부터 끝까지 한번씩 반복하면서
 	//읽는 '반복자(iterator)'를 선언하여 사용 - 향상된 for문
 	for(int k:n) {
-		System.out.println(k + "\t");// k[n]과 똑같음
+		System.out.print(k + "\t");// k[n]과 똑같음
 	}
 	
 	}

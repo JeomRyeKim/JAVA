@@ -50,10 +50,10 @@ public class ArrayEx10 {
 		//null이 아닌 다른 값으로 초기화를 해주어야함.
 		String[] stringA = new String [5];
 		stringA[0]="a";
-		stringA[1]="b";
+		stringA[1]="bb";
 		stringA[2]="c";
-		stringA[3]="d";
-		stringA[4]="e";
+		stringA[3]="ddd";
+		stringA[4]="eeeee";
 		
 		for (int i=0; i<stringA.length; i++) {
 			System.out.print(stringA[i].length() + "\t");
