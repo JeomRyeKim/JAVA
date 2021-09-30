@@ -11,7 +11,12 @@ import java.util.Scanner;
 public class Work01 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		// 제지방량 구하기
+		String s1 = "woman";
+		String s2 = "man";
+		
+		
+		
+		// 체지방량 구하기
 		final double ST1 = 1.10;
 		final double ST2 = 128;
 
