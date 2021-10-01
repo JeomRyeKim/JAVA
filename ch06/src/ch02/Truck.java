@@ -7,7 +7,7 @@ public class Truck extends Car{
 	public String model="truck";
 
 	//메소드
-	@Override //Source - Override/Implement Methods...
+	@Override //Source - Override/Implement Methods... - 상위객체 클릭 후 oK하면 상속됨.
 	public void run() {
 		System.out.println("트럭이 달립니다.");
 		//super.run();

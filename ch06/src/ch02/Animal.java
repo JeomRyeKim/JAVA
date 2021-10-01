@@ -1,5 +1,5 @@
 package ch02;
-
+// Fish,Bird,Dog∏¶ Animal πÿ¿∏∑Œ ªÛº”Ω√≈¥.
 public class Animal {
 	String name="µøπ∞";
 	
