@@ -5,7 +5,7 @@ public class UseCalcExam {
 		//객체 생성
 		Calculator cal = new Calculator();//같은 패키지인 ch02에 있는 Calculator클래스를 의미함.
 
-		cal.getCalc("+", 10, 20);
+		cal.getCalc("user","+", 10, 20);
 		//외부에서 접근 가능
 		System.out.println(cal.model);
 		
