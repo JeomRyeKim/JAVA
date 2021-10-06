@@ -3,7 +3,8 @@ package work;
 import java.util.Scanner;
 
 /* 체지방 구하기 */
-public class Work4 {	
+public class Work4 {
+	//전역(global)변수 -> 필드
 static Scanner scanner = new Scanner(System.in);	
 static final double maleSTD = 1.10, femaleSTD=1.07;
 static final int COMSTD=128, COMSTD2=100;
@@ -27,7 +28,8 @@ static double leanBodyRatio;
 	 * 2-1. 제지방율 = 제지방량*100/체중
 	 * 3. 체지방율 = 체지방량 * 100/체중                
 	 * */		  	  
-while(run){	  
+while(run){
+	//로컬변수
 	String gender; int age; double height, weight;
 	
 	  //static void printMenu(){}
