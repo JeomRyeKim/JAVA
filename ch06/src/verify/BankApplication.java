@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class BankApplication {
 	private static Account[] accountArray = new Account[100];//[null][null][null][null]..[null]-100개
 	private static Scanner scanner = new Scanner(System.in);
-	private static int idx;//idx=0;
+	private static int idx;//idx=0; 초기화해주는 것.
 	
 	public static void main(String[] args) {
 	 boolean run=true;
