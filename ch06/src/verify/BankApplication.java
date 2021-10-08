@@ -76,6 +76,7 @@ public class BankApplication {
 		System.out.print("예금액");
 		int amount = scanner.nextInt();
 		Account acc = findAccount(ano);
+		
 		if (acc != null) {
 			acc.setBalance(acc.getBalance() + amount);
             System.out.println("결과:예금이 성공되었습니다.");
