@@ -1,7 +1,7 @@
 package ch02_instanceof;
 
 public class InstanceOfEx {
-	static void print(Person p) {//
+	static void print(Person p) {//매개변수의 다형성
 		if(p instanceof Person)
 			System.out.print("Person ");
 		if(p instanceof Student)
