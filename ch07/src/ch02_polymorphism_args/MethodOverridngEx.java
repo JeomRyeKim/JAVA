@@ -1,6 +1,7 @@
 package ch02_polymorphism_args;
 
 public class MethodOverridngEx {
+	//매개변수의 다형성
  static void paint(Shape p) {
 	 p.draw();
  }
