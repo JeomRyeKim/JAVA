@@ -1,12 +1,13 @@
 package ch02_List;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
-public class ListEx01 {
+public class LinkedList01 {
 public static void main(String[] args) {
 	//String타입 객체를 저장하는 리스트 생성
-	List<String> list = new ArrayList<>();//default 10
+//	List<String> list = new ArrayList<>();//default 10
+	List<String> list = new LinkedList<>();
 	//size() 저장된 요소의 개수
 	System.out.println(list.size());
 	//추가 - addend
