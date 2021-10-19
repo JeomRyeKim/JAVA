@@ -1,12 +1,16 @@
 package ch02_List;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ArrayList01 {
 public static void main(String[] args) {
 	//List 인터페이스 타입의 변수선언 = ArrayList객체 생성
 	List<String> list = new ArrayList<>();
+	//동기화 처리 Collections.synchronizedXXX();
+	list = Collections.synchronizedList(list);
+	
 	//객체 추가 메소드 add(객체);
 	list.add("hello");
 	list.add("hi");
