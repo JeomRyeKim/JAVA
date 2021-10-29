@@ -39,8 +39,8 @@ public static void main(String[] args) {
 		rs = stmt.executeQuery(sql);
 		//결과로 넘어온 ResultSet을 한 행씩 추출하여 처리하기
 		while(rs.next()) {
-			int bookid = rs.getInt("bookid");
-			String bookname = rs.getString("bookname");
+			int bookid = rs.getInt("bookid"); //getIng(칼럼명)
+			String bookname = rs.getString("bookname");//getString(칼럼명)
 			String publisher = rs.getString("publisher");
 			int price = rs.getInt("price");
 			System.out.println(bookid + "|" + bookname + "|" + publisher + "|" + price);
