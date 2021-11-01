@@ -33,7 +33,14 @@ public class InsertTest6 {
            //
             System.out.println("계속할까요?(y/n)>");
             String isRun = scanner.next();
+            try {
             if(isRun.equalsIgnoreCase("n")) run=false;
+            if(!(isRun.equalsIgnoreCase("n") | isRun.equalsIgnoreCase("y")) ) {
+            	throw new Exception("y나 n을 입력하세요");
+            }
+            }catch(Exception e) {
+            	System.out.println(e.getMessage());
+            }
            }		
             
             //5.결과 조회 
@@ -54,5 +61,31 @@ public class InsertTest6 {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-	}
-}
+	}//main메소드 끝.
+}//클래스 끝.
+
+/************************************* 
+--account테이블 생성
+create table account(
+accountNo varchar2(50)  primary key,
+owner  varchar2(100),
+balance number
+);
+insert into account values('111-001', '홍길동',10000);
+select * from account;
+delete from account;
+commit;
+select '111'||'-'||lpad(nvl(max(accountno),0)+1,3,'0') 
+  from account;
+--lpad함수
+select lpad(to_number(substr(nvl(max(accountno),0),5,3))+1,3,'0') from account;
+  
+select lpad(to_number(nvl(substr(nvl(max(accountno),0),5,3),0))+1,3,'0') from account;
+select '111'||'-'||lpad(to_number(nvl(substr(nvl(max(accountno),0),5,3),0))+1,3,'0') from account;
+--- 입력
+-- 이름, 잔고 10000 입력
+--등록결과 조회
+-- 111-001, '홍길동', 10000
+-- 111-002, '일지매', 10000
+-- 111-003, '임꺽정', 10000
+********************/

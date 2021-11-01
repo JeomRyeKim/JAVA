@@ -28,13 +28,13 @@ public static void main(String[] args) {
 		
 		//5.조회 객체 전달 및 결과 받기
 		ResultSet rs = stmt.executeQuery(sb+" ");
-		while(rs.next()) {
-			int bookid = rs.getInt(1);//getInt(칼럼순서)
-			String bookname = rs.getString(2);//getString(칼럼순서)
-			String publisher = rs.getString(3);
-			int price = rs.getInt(4);
-			System.out.println(bookid + "\t|" + bookname + "\t|" + publisher + "\t|" + price);
-		}
+//		while(rs.next()) {
+//			int bookid = rs.getInt(1);//getInt(칼럼순서)
+//			String bookname = rs.getString(2);//getString(칼럼순서)
+//			String publisher = rs.getString(3);
+//			int price = rs.getInt(4);
+//			System.out.println(bookid + "\t|" + bookname + "\t|" + publisher + "\t|" + price);
+//		}
 		//6.자원 해제
 		rs.close();
 		stmt.close();
